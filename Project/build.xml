@@ -1,7 +1,56 @@
 <project name="myprojectname">
 	
+	<!-- define common directories, filenames, etc. -->
+	<property name="bin_dir" value="./bin" />
+	<property name="src_dir" value="./src" />
+	<property name="lib_dir" value="./lib" />
+	<property name="test_reports" value="./reports" />
+	
+	<path id="compiler_path">
+		<fileset dir="${lib_dir}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="runtime_path">
+		<path refid="compiler_path" />
+		<pathelement location="${bin_dir}" />
+	</path>
+	
 	<!-- our build definition will appear here -->
 	<echo message="Build Started" />
+	
+	<!-- 1: delete any generated resources -->
+	<delete dir="${bin_dir}" />
+	<delete dir="${test_reports}" />
+	
+	<!-- 2: recreate the generated directories -->
+	<mkdir dir="${bin_dir}" />
+	<mkdir dir="${test_reports}" />
+	
+	<!-- 3: compile the Java -->
+	<javac srcdir="${src_dir}" destdir="${bin_dir}" includeantruntime="false" debug="true">
+		<classpath refid="compiler_path" />
+	</javac>
+	
+	<!-- 4: Run all of the JUnit Tests -->
+	<junit printsummary="on" failureproperty="junit.failure">
+		<classpath refid="runtime_path" />
+		
+		<batchtest todir="${test_reports}">
+			<formatter type="xml" />
+			
+			<fileset dir="${src_dir}">
+				<include name="**/*Test*" />
+			</fileset>
+		</batchtest>
+	</junit>
+	
+	<!-- 5: Generate a JUnit Report -->
+	<junitreport>
+		<fileset dir="${test_reports}" />
+		<report todir="${test_reports}" />
+	</junitreport>
+	<fail if="junit.failure" message="Some unit tests have failed" />
 	
 	
 	<echo message="Build Finished" />
