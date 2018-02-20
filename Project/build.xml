@@ -1,0 +1,9 @@
+<project name="myprojectname">
+	
+	<!-- our build definition will appear here -->
+	<echo message="Build Started" />
+	
+	
+	<echo message="Build Finished" />
+	
+</project>
