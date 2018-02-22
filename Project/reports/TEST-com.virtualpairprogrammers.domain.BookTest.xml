@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="java-devops" name="com.virtualpairprogrammers.domain.BookTest" skipped="0" tests="2" time="0.043" timestamp="2018-02-20T19:25:31">
+<testsuite errors="0" failures="0" hostname="java-devops" name="com.virtualpairprogrammers.domain.BookTest" skipped="0" tests="2" time="0.038" timestamp="2018-02-22T15:30:15">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64" />
@@ -21,6 +21,7 @@
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
     <property name="basedir" value="/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/Project" />
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed" />
+    <property name="client_classname" value="com.virtualpairprogrammers.client.SpringClient" />
     <property name="os.arch" value="amd64" />
     <property name="bin_dir" value="./bin" />
     <property name="java.io.tmpdir" value="/tmp" />
@@ -31,28 +32,29 @@
     <property name="ant.home" value="/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840" />
     <property name="test_reports" value="./reports" />
     <property name="ant.project.name" value="myprojectname" />
+    <property name="doc_dir" value="./docs" />
     <property name="sun.jnu.encoding" value="UTF-8" />
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib:/home/anderson/.eclipse/org.eclipse.platform_4.7.2_938561712_linux_gtk_x86_64/configuration/org.eclipse.osgi/406/0/.cp" />
-    <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="java.class.version" value="52.0" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="os.version" value="4.13.0-32-generic" />
     <property name="ant.file" value="/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/Project/build.xml" />
     <property name="user.home" value="/home/anderson" />
     <property name="user.timezone" value="" />
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
-    <property name="file.encoding" value="UTF-8" />
     <property name="java.specification.version" value="1.8" />
+    <property name="file.encoding" value="UTF-8" />
     <property name="lib_dir" value="./lib" />
     <property name="java.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-antlr.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-bcel.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-bsf.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-log4j.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-oro.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-regexp.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-resolver.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-apache-xalan2.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-commons-logging.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-commons-net.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-jai.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-javamail.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-jdepend.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-jmf.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-jsch.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-junit.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-junit4.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-launcher.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-netrexx.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-swing.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-testutil.jar:/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant.jar:/home/anderson/.eclipse/org.eclipse.platform_4.7.2_938561712_linux_gtk_x86_64/configuration/org.eclipse.osgi/68/0/.cp/lib/antdebug.jar:/home/anderson/.eclipse/org.eclipse.platform_4.7.2_938561712_linux_gtk_x86_64/configuration/org.eclipse.osgi/68/0/.cp/lib/remote.jar:/home/anderson/.eclipse/org.eclipse.platform_4.7.2_938561712_linux_gtk_x86_64/configuration/org.eclipse.osgi/69/0/.cp/lib/remoteAnt.jar:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar:/opt/eclipse/.p2/pool/plugins/org.eclipse.swt.gtk.linux.x86_64_3.106.2.v20171129-0543.jar" />
     <property name="user.name" value="anderson" />
     <property name="ant.file.myprojectname" value="/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/Project/build.xml" />
     <property name="java.vm.specification.version" value="1.8" />
-    <property name="sun.arch.data.model" value="64" />
-    <property name="sun.java.command" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1519154727618 -Declipse.connect.port=42841 -Dant.home=/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840 -logger org.eclipse.ant.internal.launching.remote.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -buildfile /home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/Project/build.xml" />
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
-    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="sun.java.command" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1519313411693 -Declipse.connect.port=41261 -Dant.home=/opt/eclipse/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840 -logger org.eclipse.ant.internal.launching.remote.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -buildfile /home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/Project/build.xml" />
+    <property name="sun.arch.data.model" value="64" />
     <property name="user.language" value="en" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
     <property name="java.vm.info" value="mixed mode" />
     <property name="java.version" value="1.8.0_151" />
@@ -62,14 +64,14 @@
     <property name="ant.file.type.myprojectname" value="file" />
     <property name="file.separator" value="/" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-    <property name="sun.cpu.endian" value="little" />
     <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.cpu.endian" value="little" />
     <property name="sun.desktop" value="gnome" />
     <property name="src_dir" value="./src" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="com.virtualpairprogrammers.domain.BookTest" name="testConvertingToString" time="0.009" />
-  <testcase classname="com.virtualpairprogrammers.domain.BookTest" name="testBooksWithTheSameIsbnAreConsideredEqual" time="0.0" />
+  <testcase classname="com.virtualpairprogrammers.domain.BookTest" name="testConvertingToString" time="0.002" />
+  <testcase classname="com.virtualpairprogrammers.domain.BookTest" name="testBooksWithTheSameIsbnAreConsideredEqual" time="0.001" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

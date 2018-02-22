@@ -5,6 +5,8 @@
 	<property name="src_dir" value="./src" />
 	<property name="lib_dir" value="./lib" />
 	<property name="test_reports" value="./reports" />
+	<property name="doc_dir" value="./docs" />
+	<property name="client_classname" value="com.virtualpairprogrammers.client.SpringClient" />
 	
 	<path id="compiler_path">
 		<fileset dir="${lib_dir}">
@@ -22,10 +24,12 @@
 	<!-- 1: delete any generated resources -->
 	<delete dir="${bin_dir}" />
 	<delete dir="${test_reports}" />
+	<delete dir="${doc_dir}" />
 	
 	<!-- 2: recreate the generated directories -->
 	<mkdir dir="${bin_dir}" />
 	<mkdir dir="${test_reports}" />
+	<mkdir dir="${doc_dir}" />
 	
 	<!-- 3: compile the Java -->
 	<javac srcdir="${src_dir}" destdir="${bin_dir}" includeantruntime="false" debug="true">
@@ -52,6 +56,24 @@
 	</junitreport>
 	<fail if="junit.failure" message="Some unit tests have failed" />
 	
+	<!-- 6: Generate the JavaDocs -->
+	<javadoc destdir="${doc_dir}">
+		<packageset dir="${src_dir}">
+			<include name="com/**" />
+		</packageset>
+	</javadoc>
+	
+	<!-- 7: Copy application.xml and log4j.properties to the bin directory along with any other file to its corresponding dir -->
+	<copy todir="${bin_dir}">
+		<fileset dir="${src_dir}">
+			<exclude name="**/*.java" />
+		</fileset>
+	</copy>
+	
+	<!-- 7: Run the SpringClient class -->
+	<java classname="${client_classname}">
+		<classpath refid="runtime_path" />
+	</java>
 	
 	<echo message="Build Finished" />
 	
