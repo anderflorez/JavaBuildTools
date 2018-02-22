@@ -1,80 +1,123 @@
-<project name="myprojectname">
+<project name="myprojectname" default="webDeploy">
 	
-	<!-- define common directories, filenames, etc. -->
-	<property name="bin_dir" value="./bin" />
-	<property name="src_dir" value="./src" />
-	<property name="lib_dir" value="./lib" />
-	<property name="test_reports" value="./reports" />
-	<property name="doc_dir" value="./docs" />
-	<property name="client_classname" value="com.virtualpairprogrammers.client.SpringClient" />
+	<target name="basicRun" depends="runTests">
+		<fail if="junit.failure" message="Some unit tests have failed" />
+	</target>
 	
-	<path id="compiler_path">
-		<fileset dir="${lib_dir}">
-			<include name="*.jar" />
-		</fileset>
-	</path>
-	<path id="runtime_path">
-		<path refid="compiler_path" />
-		<pathelement location="${bin_dir}" />
-	</path>
+	<target name="webDeploy" depends="deploy" />
+
+	<target name="fullRun" depends="generateTestReport, generateJavaDocs, runApplication" />
 	
-	<!-- our build definition will appear here -->
-	<echo message="Build Started" />
-	
-	<!-- 1: delete any generated resources -->
-	<delete dir="${bin_dir}" />
-	<delete dir="${test_reports}" />
-	<delete dir="${doc_dir}" />
-	
-	<!-- 2: recreate the generated directories -->
-	<mkdir dir="${bin_dir}" />
-	<mkdir dir="${test_reports}" />
-	<mkdir dir="${doc_dir}" />
-	
-	<!-- 3: compile the Java -->
-	<javac srcdir="${src_dir}" destdir="${bin_dir}" includeantruntime="false" debug="true">
-		<classpath refid="compiler_path" />
-	</javac>
-	
-	<!-- 4: Run all of the JUnit Tests -->
-	<junit printsummary="on" failureproperty="junit.failure">
-		<classpath refid="runtime_path" />
+	<target name="setup">
 		
-		<batchtest todir="${test_reports}">
-			<formatter type="xml" />
-			
-			<fileset dir="${src_dir}">
-				<include name="**/*Test*" />
+		<property name="bin_dir" value="./bin" />
+		<property name="src_dir" value="./src" />
+		<property name="lib_dir" value="./lib" />
+		<property name="test_reports" value="./reports" />
+		<property name="doc_dir" value="./docs" />
+		<property name="client_classname" value="com.virtualpairprogrammers.client.SpringClient" />
+		<property name="dist_dir" value="./dist" />
+		<property name="war_file" value="./mywebapp.war" />
+		<property name="html_dir" value="./web" />
+		<property name="webinf_dir" value="./WEB-INF" />
+		<property name="tomcat_dir" value="../apache-tomcat-9.0.5/webapps" />
+
+		<path id="compiler_path">
+			<fileset dir="${lib_dir}">
+				<include name="*.jar" />
 			</fileset>
-		</batchtest>
-	</junit>
+		</path>
+		<path id="runtime_path">
+			<path refid="compiler_path" />
+			<pathelement location="${bin_dir}" />
+		</path>
+
+	</target>
 	
-	<!-- 5: Generate a JUnit Report -->
-	<junitreport>
-		<fileset dir="${test_reports}" />
-		<report todir="${test_reports}" />
-	</junitreport>
-	<fail if="junit.failure" message="Some unit tests have failed" />
+	<target name="clean" depends="setup">
+		<delete dir="${bin_dir}" />
+		<delete dir="${test_reports}" />
+		<delete dir="${doc_dir}" />
+		<delete dir="${dist_dir}" />
+	</target>
 	
-	<!-- 6: Generate the JavaDocs -->
-	<javadoc destdir="${doc_dir}">
-		<packageset dir="${src_dir}">
-			<include name="com/**" />
-		</packageset>
-	</javadoc>
+	<target name="recreateDirectories" depends="clean">
+		<mkdir dir="${bin_dir}" />
+		<mkdir dir="${test_reports}" />
+		<mkdir dir="${doc_dir}" />
+		<mkdir dir="${dist_dir}" />
+	</target>
 	
-	<!-- 7: Copy application.xml and log4j.properties to the bin directory along with any other file to its corresponding dir -->
-	<copy todir="${bin_dir}">
-		<fileset dir="${src_dir}">
-			<exclude name="**/*.java" />
-		</fileset>
-	</copy>
+	<target name="compile" depends="recreateDirectories">
+		<javac srcdir="${src_dir}" destdir="${bin_dir}" includeantruntime="false" debug="true">
+			<classpath refid="compiler_path" />
+		</javac>
+	</target>
 	
-	<!-- 7: Run the SpringClient class -->
-	<java classname="${client_classname}">
-		<classpath refid="runtime_path" />
-	</java>
+	<target name="runTests" depends="compile">
+		<junit printsummary="on" failureproperty="junit.failure">
+			<classpath refid="runtime_path" />
+			
+			<batchtest todir="${test_reports}">
+				<formatter type="xml" />
+				
+				<fileset dir="${src_dir}">
+					<include name="**/*Test*" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
 	
-	<echo message="Build Finished" />
+	<target name="generateTestReport" depends="runTests">
+		<junitreport>
+			<fileset dir="${test_reports}" />
+			<report todir="${test_reports}" />
+		</junitreport>
+		<fail if="junit.failure" message="Some unit tests have failed" />
+	</target>
+
+	<target name="generateJavaDocs" depends="recreateDirectories">
+		<javadoc destdir="${doc_dir}">
+			<packageset dir="${src_dir}">
+				<include name="com/**" />
+			</packageset>
+		</javadoc>
+	</target>
 	
+	<target name="runApplication" depends="compile">
+		<copy todir="${bin_dir}">
+			<fileset dir="${src_dir}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+		<java classname="${client_classname}">
+			<classpath refid="runtime_path" />
+		</java>
+	</target>
+	
+	<target name="deploy" depends="runTests">
+		<war warfile="${dist_dir}/${war_file}" webxml="web.xml">
+			<fileset dir="${html_dir}" />
+			<lib dir="${lib_dir}">
+				<exclude name="servlet-api.jar" />
+			</lib>
+			<classes dir="${bin_dir}" />
+				
+			<classes dir="${webinf_dir}">
+				<include name="**/*.properties" />
+			</classes>
+			
+			<webinf dir="${webinf_dir}">
+				<exclude name="**/*.properties" />
+			</webinf>
+			
+			<webinf dir="${src_dir}">
+				<include name="**/*.xml" />
+				<include name="**/*.properties" />
+			</webinf>
+		</war>
+		
+		<copy file="${dist_dir}/${war_file}" todir="${tomcat_dir}" />
+	</target>
+
 </project>

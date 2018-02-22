@@ -1,0 +1,23 @@
+<project name="testing target" default="run_build">
+
+	<target name="run_build" depends="target1, target2, target3, target4">
+		<echo message="build complete" />
+	</target>
+	
+	<target name="target1">
+		<echo message="This is target 1" />
+	</target>
+	
+	<target name="target2">
+		<echo message="This is target 2" />
+	</target>
+	
+	<target name="target3">
+		<echo message="This is target 3" />
+	</target>
+	
+	<target name="target4">
+		<echo message="This is target 4" />
+	</target>
+	
+</project>
