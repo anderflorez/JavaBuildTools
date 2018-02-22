@@ -1,0 +1,77 @@
+22-Feb-2018 12:08:32.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.5
+22-Feb-2018 12:08:32.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 6 2018 21:42:23 UTC
+22-Feb-2018 12:08:32.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.5.0
+22-Feb-2018 12:08:32.066 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+22-Feb-2018 12:08:32.067 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.13.0-32-generic
+22-Feb-2018 12:08:32.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+22-Feb-2018 12:08:32.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+22-Feb-2018 12:08:32.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+22-Feb-2018 12:08:32.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+22-Feb-2018 12:08:32.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5
+22-Feb-2018 12:08:32.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5
+22-Feb-2018 12:08:32.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/conf/logging.properties
+22-Feb-2018 12:08:32.070 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Feb-2018 12:08:32.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+22-Feb-2018 12:08:32.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Feb-2018 12:08:32.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+22-Feb-2018 12:08:32.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5
+22-Feb-2018 12:08:32.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5
+22-Feb-2018 12:08:32.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/temp
+22-Feb-2018 12:08:32.073 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+22-Feb-2018 12:08:32.304 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+22-Feb-2018 12:08:32.349 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+22-Feb-2018 12:08:32.359 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+22-Feb-2018 12:08:32.359 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+22-Feb-2018 12:08:32.363 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 971 ms
+22-Feb-2018 12:08:32.430 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+22-Feb-2018 12:08:32.430 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.5
+22-Feb-2018 12:08:32.460 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/host-manager]
+22-Feb-2018 12:08:33.001 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/host-manager] has finished in [541] ms
+22-Feb-2018 12:08:33.001 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/manager]
+22-Feb-2018 12:08:33.040 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/manager] has finished in [39] ms
+22-Feb-2018 12:08:33.040 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/ROOT]
+22-Feb-2018 12:08:33.066 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/ROOT] has finished in [26] ms
+22-Feb-2018 12:08:33.068 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/examples]
+22-Feb-2018 12:08:33.446 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/examples] has finished in [378] ms
+22-Feb-2018 12:08:33.447 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/docs]
+22-Feb-2018 12:08:33.468 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/docs] has finished in [21] ms
+22-Feb-2018 12:08:33.472 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+22-Feb-2018 12:08:33.483 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+22-Feb-2018 12:08:33.486 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1122 ms
+22-Feb-2018 12:49:34.205 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war]
+22-Feb-2018 12:49:36.538 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+log4j:WARN No appenders could be found for logger (org.springframework.web.servlet.DispatcherServlet).
+log4j:WARN Please initialize the log4j system properly.
+22-Feb-2018 12:49:36.905 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war] has finished in [2,700] ms
+22-Feb-2018 13:11:17.381 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mywebapp]
+22-Feb-2018 13:11:17.474 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war]
+22-Feb-2018 13:11:18.888 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+log4j:WARN No appenders could be found for logger (org.springframework.web.servlet.DispatcherServlet).
+log4j:WARN Please initialize the log4j system properly.
+22-Feb-2018 13:11:20.686 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war] has finished in [3,111] ms
+22-Feb-2018 14:41:22.649 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mywebapp]
+22-Feb-2018 14:41:22.686 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war]
+22-Feb-2018 14:41:23.835 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+log4j:WARN No appenders could be found for logger (org.springframework.web.servlet.DispatcherServlet).
+log4j:WARN Please initialize the log4j system properly.
+22-Feb-2018 14:41:24.896 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war] has finished in [2,210] ms
+22-Feb-2018 15:06:55.427 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mywebapp]
+22-Feb-2018 15:06:55.447 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war]
+22-Feb-2018 15:06:57.038 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+log4j:WARN No appenders could be found for logger (org.springframework.web.servlet.DispatcherServlet).
+log4j:WARN Please initialize the log4j system properly.
+22-Feb-2018 15:06:58.153 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war] has finished in [2,706] ms
+22-Feb-2018 15:11:08.197 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mywebapp]
+22-Feb-2018 15:11:08.215 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war]
+22-Feb-2018 15:11:09.191 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+log4j:WARN No appenders could be found for logger (org.springframework.web.servlet.DispatcherServlet).
+log4j:WARN Please initialize the log4j system properly.
+22-Feb-2018 15:11:10.541 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war] has finished in [2,326] ms
+22-Feb-2018 15:16:03.704 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+22-Feb-2018 15:16:03.705 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+22-Feb-2018 15:16:03.708 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+22-Feb-2018 15:16:03.708 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+22-Feb-2018 15:16:03.833 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+22-Feb-2018 15:16:03.839 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+22-Feb-2018 15:16:03.842 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+22-Feb-2018 15:16:03.844 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
