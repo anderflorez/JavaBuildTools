@@ -1,0 +1,6 @@
+127.0.0.1 - - [23/Feb/2018:12:22:24 -0500] "GET / HTTP/1.1" 200 11248
+127.0.0.1 - - [23/Feb/2018:12:54:14 -0500] "GET /mymavenwebapp/viewAllBooks.do HTTP/1.1" 500 5055
+127.0.0.1 - - [23/Feb/2018:12:59:42 -0500] "GET /mymavenwebapp/viewAllBooks.do HTTP/1.1" 200 10084
+127.0.0.1 - - [23/Feb/2018:12:59:42 -0500] "GET /mymavenwebapp/styles.css;jsessionid=D16124B0E14D8F00DF1A6D483115EA26 HTTP/1.1" 200 2520
+127.0.0.1 - - [23/Feb/2018:12:59:42 -0500] "GET /mymavenwebapp/cart-button.png;jsessionid=D16124B0E14D8F00DF1A6D483115EA26 HTTP/1.1" 200 891
+127.0.0.1 - - [23/Feb/2018:12:59:42 -0500] "GET /mymavenwebapp/background.gif HTTP/1.1" 200 115

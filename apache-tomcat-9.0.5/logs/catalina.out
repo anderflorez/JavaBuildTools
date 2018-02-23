@@ -75,3 +75,345 @@ log4j:WARN Please initialize the log4j system properly.
 22-Feb-2018 15:16:03.839 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
 22-Feb-2018 15:16:03.842 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
 22-Feb-2018 15:16:03.844 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+23-Feb-2018 12:22:02.534 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.5
+23-Feb-2018 12:22:02.544 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 6 2018 21:42:23 UTC
+23-Feb-2018 12:22:02.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.5.0
+23-Feb-2018 12:22:02.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+23-Feb-2018 12:22:02.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.13.0-36-generic
+23-Feb-2018 12:22:02.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+23-Feb-2018 12:22:02.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+23-Feb-2018 12:22:02.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+23-Feb-2018 12:22:02.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+23-Feb-2018 12:22:02.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5
+23-Feb-2018 12:22:02.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5
+23-Feb-2018 12:22:02.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/conf/logging.properties
+23-Feb-2018 12:22:02.548 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+23-Feb-2018 12:22:02.549 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+23-Feb-2018 12:22:02.549 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+23-Feb-2018 12:22:02.549 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+23-Feb-2018 12:22:02.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5
+23-Feb-2018 12:22:02.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5
+23-Feb-2018 12:22:02.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/temp
+23-Feb-2018 12:22:02.550 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+23-Feb-2018 12:22:02.710 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+23-Feb-2018 12:22:02.763 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+23-Feb-2018 12:22:02.776 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+23-Feb-2018 12:22:02.777 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+23-Feb-2018 12:22:02.777 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1065 ms
+23-Feb-2018 12:22:02.869 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+23-Feb-2018 12:22:02.869 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.5
+23-Feb-2018 12:22:02.967 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war]
+23-Feb-2018 12:22:07.853 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+log4j:WARN No appenders could be found for logger (org.springframework.web.servlet.DispatcherServlet).
+log4j:WARN Please initialize the log4j system properly.
+23-Feb-2018 12:22:11.215 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mywebapp.war] has finished in [8,239] ms
+23-Feb-2018 12:22:11.216 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/host-manager]
+23-Feb-2018 12:22:11.333 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/host-manager] has finished in [117] ms
+23-Feb-2018 12:22:11.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/manager]
+23-Feb-2018 12:22:11.382 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/manager] has finished in [48] ms
+23-Feb-2018 12:22:11.391 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/ROOT]
+23-Feb-2018 12:22:11.448 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/ROOT] has finished in [57] ms
+23-Feb-2018 12:22:11.448 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/examples]
+23-Feb-2018 12:22:11.930 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/examples] has finished in [482] ms
+23-Feb-2018 12:22:11.931 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/docs]
+23-Feb-2018 12:22:11.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/docs] has finished in [58] ms
+23-Feb-2018 12:22:11.992 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+23-Feb-2018 12:22:12.027 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+23-Feb-2018 12:22:12.059 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 9281 ms
+23-Feb-2018 12:30:12.658 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mywebapp]
+23-Feb-2018 12:35:52.833 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war]
+23-Feb-2018 12:35:54.402 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Dispatcher': initialization started
+23-Feb-2018 12:35:54.426 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Dispatcher-servlet': startup date [Fri Feb 23 12:35:54 EST 2018]; root of context hierarchy
+23-Feb-2018 12:35:54.466 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Dispatcher-servlet.xml]
+23-Feb-2018 12:35:54.662 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from URL [file:/home/anderson/Documents/eclipse%20workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp/WEB-INF/application.xml]
+23-Feb-2018 12:35:54.664 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.DispatcherServlet.initServletBean Context initialization failed
+ org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from relative location [/application.xml]
+Offending resource: ServletContext resource [/WEB-INF/Dispatcher-servlet.xml]; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from URL [file:/home/anderson/Documents/eclipse%20workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp/WEB-INF/application.xml]; nested exception is java.io.FileNotFoundException: /home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp/WEB-INF/application.xml (No such file or directory)
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:274)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:199)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:147)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:101)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:495)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:545)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:651)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:602)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:665)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:521)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:462)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1124)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1079)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:971)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4823)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5133)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:976)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1847)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:761)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:431)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1619)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1172)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1398)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1366)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from URL [file:/home/anderson/Documents/eclipse%20workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp/WEB-INF/application.xml]; nested exception is java.io.FileNotFoundException: /home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp/WEB-INF/application.xml (No such file or directory)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:263)
+	... 48 more
+Caused by: java.io.FileNotFoundException: /home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp/WEB-INF/application.xml (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.springframework.core.io.UrlResource.getInputStream(UrlResource.java:168)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 52 more
+
+23-Feb-2018 12:35:54.677 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war] has finished in [1,844] ms
+23-Feb-2018 12:44:34.869 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mymavenwebapp]
+23-Feb-2018 12:44:34.898 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war]
+23-Feb-2018 12:44:36.303 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'Dispatcher': initialization started
+23-Feb-2018 12:44:36.325 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Dispatcher-servlet': startup date [Fri Feb 23 12:44:36 EST 2018]; root of context hierarchy
+23-Feb-2018 12:44:36.363 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Dispatcher-servlet.xml]
+23-Feb-2018 12:44:36.663 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/application.xml]
+23-Feb-2018 12:44:36.971 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.DispatcherServlet.initServletBean Context initialization failed
+ org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [http://www.springframework.org/schema/webflow-config]
+Offending resource: ServletContext resource [/WEB-INF/Dispatcher-servlet.xml]
+
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:80)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:315)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1429)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1422)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:187)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:147)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:101)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:495)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:335)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:545)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:651)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:602)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:665)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:521)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:462)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1124)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1079)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:971)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4823)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5133)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:976)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1847)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:761)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:431)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1619)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1172)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1398)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1366)
+	at java.lang.Thread.run(Thread.java:748)
+
+23-Feb-2018 12:44:36.975 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war] has finished in [2,076] ms
+23-Feb-2018 12:51:37.094 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mymavenwebapp]
+23-Feb-2018 12:51:37.131 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war]
+23-Feb-2018 12:51:39.043 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'Dispatcher': initialization started
+23-Feb-2018 12:51:39.066 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Dispatcher-servlet': startup date [Fri Feb 23 12:51:39 EST 2018]; root of context hierarchy
+23-Feb-2018 12:51:39.106 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Dispatcher-servlet.xml]
+23-Feb-2018 12:51:39.177 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/application.xml]
+23-Feb-2018 12:51:39.470 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c77272a: defining beans [messageSource,bookService,accountsService,org.springframework.web.servlet.view.ResourceBundleViewResolver#0,org.springframework.web.servlet.view.UrlBasedViewResolver#0,shoppingCart,bookValidator,orderFlowActions,createBookController,cartManagementController,bookManagementController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,flowExecutor,org.springframework.binding.convert.service.DefaultConversionService#0,org.springframework.webflow.expression.spel.WebFlowSpringELExpressionParser#0,org.springframework.webflow.mvc.builder.MvcViewFactoryCreator#0,org.springframework.webflow.engine.builder.support.FlowBuilderServices#0,flowRegistry,flowMappings,org.springframework.webflow.mvc.servlet.FlowHandlerAdapter#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+23-Feb-2018 12:51:39.676 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/addNewBook],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.CreateBookController.show()
+23-Feb-2018 12:51:39.677 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/addNewBook],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.CreateBookController.processForm(com.virtualpairprogrammers.domain.Book,org.springframework.validation.Errors)
+23-Feb-2018 12:51:39.678 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/addToCart],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.CartManagementController.addToCart(int)
+23-Feb-2018 12:51:39.678 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/viewCart],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.CartManagementController.viewCart()
+23-Feb-2018 12:51:39.679 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/looseSearch],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.virtualpairprogrammers.domain.Book> com.virtualpairprogrammers.control.BookManagementController.performLooseSearch(java.lang.String)
+23-Feb-2018 12:51:39.679 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/viewAllBooksPDF],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.BookManagementController.viewAllBooksPDF()
+23-Feb-2018 12:51:39.679 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/viewAllBooksExcel],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.BookManagementController.viewAllBooksExcel()
+23-Feb-2018 12:51:39.680 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/viewAllBooks],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.BookManagementController.viewAllBooks()
+23-Feb-2018 12:51:39.680 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/findByAuthor],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.BookManagementController.findByAuthor(java.lang.String)
+23-Feb-2018 12:51:39.987 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'Dispatcher': initialization completed in 944 ms
+23-Feb-2018 12:51:39.989 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war] has finished in [2,858] ms
+23-Feb-2018 12:54:14.333 INFO [http-nio-8080-exec-28] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7238adf9: startup date [Fri Feb 23 12:54:14 EST 2018]; parent: WebApplicationContext for namespace 'Dispatcher-servlet'
+23-Feb-2018 12:54:14.338 INFO [http-nio-8080-exec-28] org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d23b44e: defining beans [bookReportExcel,bookReportPdf,displayAllBooks]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c77272a
+23-Feb-2018 12:59:10.234 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mymavenwebapp]
+23-Feb-2018 12:59:10.263 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.context.support.AbstractApplicationContext.doClose Closing WebApplicationContext for namespace 'Dispatcher-servlet': startup date [Fri Feb 23 12:51:39 EST 2018]; root of context hierarchy
+23-Feb-2018 12:59:10.267 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c77272a: defining beans [messageSource,bookService,accountsService,org.springframework.web.servlet.view.ResourceBundleViewResolver#0,org.springframework.web.servlet.view.UrlBasedViewResolver#0,shoppingCart,bookValidator,orderFlowActions,createBookController,cartManagementController,bookManagementController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,flowExecutor,org.springframework.binding.convert.service.DefaultConversionService#0,org.springframework.webflow.expression.spel.WebFlowSpringELExpressionParser#0,org.springframework.webflow.mvc.builder.MvcViewFactoryCreator#0,org.springframework.webflow.engine.builder.support.FlowBuilderServices#0,flowRegistry,flowMappings,org.springframework.webflow.mvc.servlet.FlowHandlerAdapter#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+23-Feb-2018 12:59:10.269 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.context.support.AbstractApplicationContext.doClose Closing org.springframework.web.context.support.GenericWebApplicationContext@7238adf9: startup date [Fri Feb 23 12:54:14 EST 2018]; parent: WebApplicationContext for namespace 'Dispatcher-servlet'
+23-Feb-2018 12:59:10.280 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d23b44e: defining beans [bookReportExcel,bookReportPdf,displayAllBooks]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@c77272a
+23-Feb-2018 12:59:10.482 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war]
+23-Feb-2018 12:59:10.493 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/mymavenwebapp]
+ java.util.zip.ZipException: zip file is empty
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:103)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:130)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:614)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:747)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:182)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:976)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1847)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:761)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:431)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1619)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1172)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1398)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1366)
+	at java.lang.Thread.run(Thread.java:748)
+
+23-Feb-2018 12:59:10.495 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.WarResourceSet@23ef7fb4]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:441)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:139)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:714)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4752)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4887)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:976)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1847)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:761)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:431)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1619)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1172)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1398)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1366)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: java.util.zip.ZipException: zip file is empty
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:143)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	... 25 more
+Caused by: java.util.zip.ZipException: zip file is empty
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:149)
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:140)
+	... 26 more
+
+23-Feb-2018 12:59:10.496 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.WarResourceSet@23ef7fb4]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:744)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:976)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1847)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:761)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:431)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1619)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:304)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1172)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1398)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1366)
+	at java.lang.Thread.run(Thread.java:748)
+
+23-Feb-2018 12:59:10.497 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war] has finished in [16] ms
+23-Feb-2018 12:59:20.498 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mymavenwebapp]
+23-Feb-2018 12:59:20.500 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war]
+23-Feb-2018 12:59:22.331 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'Dispatcher': initialization started
+23-Feb-2018 12:59:22.357 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'Dispatcher-servlet': startup date [Fri Feb 23 12:59:22 EST 2018]; root of context hierarchy
+23-Feb-2018 12:59:22.396 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/Dispatcher-servlet.xml]
+23-Feb-2018 12:59:22.453 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/application.xml]
+23-Feb-2018 12:59:22.751 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7bfd3b45: defining beans [messageSource,bookService,accountsService,org.springframework.web.servlet.view.ResourceBundleViewResolver#0,org.springframework.web.servlet.view.UrlBasedViewResolver#0,shoppingCart,bookValidator,orderFlowActions,createBookController,cartManagementController,bookManagementController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,flowExecutor,org.springframework.binding.convert.service.DefaultConversionService#0,org.springframework.webflow.expression.spel.WebFlowSpringELExpressionParser#0,org.springframework.webflow.mvc.builder.MvcViewFactoryCreator#0,org.springframework.webflow.engine.builder.support.FlowBuilderServices#0,flowRegistry,flowMappings,org.springframework.webflow.mvc.servlet.FlowHandlerAdapter#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+23-Feb-2018 12:59:22.893 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/addNewBook],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.CreateBookController.show()
+23-Feb-2018 12:59:22.894 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/addNewBook],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.CreateBookController.processForm(com.virtualpairprogrammers.domain.Book,org.springframework.validation.Errors)
+23-Feb-2018 12:59:22.895 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/addToCart],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.CartManagementController.addToCart(int)
+23-Feb-2018 12:59:22.895 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/viewCart],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.CartManagementController.viewCart()
+23-Feb-2018 12:59:22.896 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/looseSearch],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.virtualpairprogrammers.domain.Book> com.virtualpairprogrammers.control.BookManagementController.performLooseSearch(java.lang.String)
+23-Feb-2018 12:59:22.897 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/viewAllBooksPDF],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.BookManagementController.viewAllBooksPDF()
+23-Feb-2018 12:59:22.897 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/viewAllBooksExcel],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.BookManagementController.viewAllBooksExcel()
+23-Feb-2018 12:59:22.897 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/viewAllBooks],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.BookManagementController.viewAllBooks()
+23-Feb-2018 12:59:22.897 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod Mapped "{[/findByAuthor],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.virtualpairprogrammers.control.BookManagementController.findByAuthor(java.lang.String)
+23-Feb-2018 12:59:23.200 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.springframework.web.servlet.FrameworkServlet.initServletBean FrameworkServlet 'Dispatcher': initialization completed in 869 ms
+23-Feb-2018 12:59:23.202 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/anderson/Documents/eclipse workspaces/JavaBuildTools/git/apache-tomcat-9.0.5/webapps/mymavenwebapp.war] has finished in [2,701] ms
+23-Feb-2018 12:59:40.839 INFO [http-nio-8080-exec-32] org.springframework.context.support.AbstractApplicationContext.prepareRefresh Refreshing org.springframework.web.context.support.GenericWebApplicationContext@24f39eea: startup date [Fri Feb 23 12:59:40 EST 2018]; parent: WebApplicationContext for namespace 'Dispatcher-servlet'
+23-Feb-2018 12:59:40.846 INFO [http-nio-8080-exec-32] org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4f2e006b: defining beans [bookReportExcel,bookReportPdf,displayAllBooks]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@7bfd3b45
