@@ -15,7 +15,7 @@
   <version>1.0-SNAPSHOT</version>
   
   <!--  How are we packaging - jar, war, ear -->
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <!--  This is optional, used for any local names for the project. Can be "softer" than the artifactId -->
   <name>Hartley's Bookstore</name>
@@ -23,13 +23,167 @@
   <!--  The website for the project -->
   <url>http://bookstore.virtualpairprogrammers.com</url>
   
+  <!-- Plugin Configuration -->
+  <build>
+  	<plugins>
+  		
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>3.7.0</version>
+  			
+  			<configuration>
+  				<verbose>false</verbose>
+  			</configuration>
+  		</plugin>
+  		
+  		<!-- Configuration for the jar file with dependencies -->
+  		<!-- This configuration is not needed if building a war file -->
+<!-- 
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-assembly-plugin</artifactId>
+			<version>3.1.0</version>
+			
+			<configuration>
+				<descriptorRefs>
+					<descriptorRef>jar-with-dependencies</descriptorRef>
+				</descriptorRefs>
+				
+				<archive>
+					<manifest>
+						<mainClass>
+							com.virtualpairprogrammers.client.SpringClient
+						</mainClass>
+					</manifest>
+				</archive>
+			</configuration>
+			
+			<executions>
+				<execution>
+					<phase>package</phase>
+					<goals>
+						<goal>single</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+ -->
+		 
+		<!-- This configuration is for the regular project jar file -->
+		<!-- This configuration is not needed when building a war file -->
+<!--
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>3.0.2</version>
+			
+			<executions>
+				<execution>
+					<id>default-jar</id>
+					<phase>none</phase>
+				</execution>
+			</executions>
+		</plugin>
+-->
+
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-war-plugin</artifactId>
+		<version>3.2.0</version>
+		
+		<configuration>
+			<outputDirectory>${basedir}/../apache-tomcat-9.0.5/webapps</outputDirectory>
+			<warName>mymavenwebapp</warName>
+			
+			<webResources>
+				<resource>
+					<directory>${basedir}/src/main/resources</directory>
+					<targetPath>WEB-INF</targetPath>
+					<includes>
+						<include>**/application.xml</include>
+						<include>**.*.properties</include>
+					</includes>
+				</resource>
+			</webResources>
+		</configuration>
+		
+	</plugin>
+	
+  	</plugins>
+  </build>
+  
   <!--  And now, a list of Maven projects that we depend upon -->
   <dependencies>
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>[3.0.3, 4.0.0)</version>
+	</dependency>
+	
+	<!-- Dependency of SpringMVC that is needed here as it has its scope is provided which means it is not a transitive dependency -->
+	<!-- and it is needed only at compile time, not at runtime which means it is not needed at the war file either -->
+	<dependency>
+		<groupId>javax.validation</groupId>
+		<artifactId>validation-api</artifactId>
+		<version>1.0.0.GA</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>servlet-api</artifactId>
+	    <version>2.5</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+	<dependency>
+	    <groupId>org.hibernate.validator</groupId>
+	    <artifactId>hibernate-validator</artifactId>
+	    <version>6.0.0.Final</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+	<dependency>
+	    <groupId>com.lowagie</groupId>
+	    <artifactId>itext</artifactId>
+	    <version>2.1.7</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+	<dependency>
+	    <groupId>org.apache.poi</groupId>
+	    <artifactId>poi</artifactId>
+	    <version>3.9</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.springframework.webflow/spring-webflow -->
+	<dependency>
+	    <groupId>org.springframework.webflow</groupId>
+	    <artifactId>spring-webflow</artifactId>
+	    <version>2.4.7.RELEASE</version>
+	    <scope>runtime</scope>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+	<dependency>
+	    <groupId>jstl</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
+	    <scope>runtime</scope>
+	</dependency>
+
+
   </dependencies>
 </project>
